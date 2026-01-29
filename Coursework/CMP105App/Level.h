@@ -2,6 +2,7 @@
 
 #include "Framework/BaseLevel.h"
 #include "Framework/GameObject.h"
+#include "Sheep.h"
 
 class Level : BaseLevel {
 public:
@@ -26,4 +27,7 @@ private:
 	const float INPUT_BUFFER_LENGTH = 0.1f;
 	const float APPROX_ONE_OVER_ROOT_TWO = 0.70710678f;	// 1 / sqrt(2)
 
+	Sheep m_sheep;
+	sf::Texture m_sheep_texture;
+	std::vector <sf::IntRect> m_sheepIntRect;
 };
